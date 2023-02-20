@@ -1,0 +1,23 @@
+#include<stdio.h>
+main() 
+{
+    int i=1,n,lar,secLar,num;
+    printf("Enter the number");
+    scanf("%d", &n);
+    while (i<=n ) 
+	{
+        scanf("%d", &num);
+       if(i==1)seclar=num; 
+        if (num > lar) 
+		{
+            seclar = lar;
+            lar = num;
+        }
+		 else if (num > seclar)
+		  {
+            seclar= num;
+        }
+        i++;
+    }
+    printf("The second largest number is %d\n", seclar);  
+}
